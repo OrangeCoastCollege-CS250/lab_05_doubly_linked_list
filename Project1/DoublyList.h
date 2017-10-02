@@ -43,22 +43,22 @@ public:
 	*********************************************************/
 
 	// Declaration function print
-
+	void print() const;
 
 	// Declaration function reversePrint
-
+	void reversePrint() const;
 
 	// Declaration function front
-
+	int front() const;
 
 	// Declaration function back
-
+	int back() const;
 
 	// Declaration function copyToList
-
+	void copyToList(DoublyList& cavnasList) const;
 
 	// Declaration function insertInOrder
-
+	void insertInOrder(const int insertedNum);
 
 private:
     Node *first;	// pointer to the first node on the list
