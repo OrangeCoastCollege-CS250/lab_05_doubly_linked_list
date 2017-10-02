@@ -50,11 +50,27 @@ int main()
 	
 	cout << "\nYour testing cases...\n";
 	// TEST function copyToList
-	// Create two lists, list1 and list2.
-	// Copy from empty list list1.
-	// Add elements to list1.
-	// Copy from list1 to empty list list2.
-	// Copy from list1 to list2.
+	DoublyList myList;
+
+	intList.insertInOrder(37);
+	intList.insertInOrder(53);
+	intList.insertInOrder(21);
+	intList.insertInOrder(18);
+	intList.insertInOrder(73);
+	intList.insertInOrder(49);
+
+	cout << "intList is: ";
+	intList.print();
+	cout << endl;
+
+	intList.copyToList(myList);
+
+	cout << "myList is: ";
+	myList.print();
+	cout << endl;
+
+	cout << "myList reversed is: ";
+	myList.reversePrint();
 
 	cout << endl << endl;
 	system("Pause");
